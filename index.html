@@ -55,7 +55,9 @@
 
     <script>
         async function fetchData() {
-            const response = await fetch('./data.json');
+            // Cache-busting: thêm timestamp để tránh cache
+            const timestamp = new Date().getTime();
+            const response = await fetch(`./data.json?t=${timestamp}`);
             const data = await response.json();
             return data.comics;
         }
