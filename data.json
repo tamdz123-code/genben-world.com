@@ -1,3 +1,19 @@
 {
-  "comics": []
+  "comics": [
+    {
+      "id": "test",
+      "title": "Test",
+      "desc": "Idk",
+      "cover": "./covers/1000120278.jpg",
+      "chapters": [
+        {
+          "id": 1,
+          "name": "Test",
+          "pages": [
+            "./pages/1000120278.jpg"
+          ]
+        }
+      ]
+    }
+  ]
 }
